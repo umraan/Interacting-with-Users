@@ -8,8 +8,15 @@
 
 #include <stdio.h>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
-    return 0;
+int main() {
+    int i;
+    char s[100];
+    
+    printf("Type a word:\n");
+    scanf("%s", s);
+    for(i = 0; s[i]; i++);
+    
+    printf("Length of word: %d\n", i);
 }
+
+
